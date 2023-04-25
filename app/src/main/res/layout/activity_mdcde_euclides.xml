@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MDCDeEuclides">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MDC de Euclides"
+        android:background="@color/red"
+        android:textColor="@color/black"
+        android:gravity="center"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:textStyle="bold"
+        android:padding="30dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="A:"
+            style="@style/TextAppearance.AppCompat.Body1" >
+
+        </TextView>
+
+
+        <NumberPicker
+            android:id="@+id/firstNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="B:"
+            style="@style/TextAppearance.AppCompat.Body1" >
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondNumber"
+            android:layout_marginHorizontal="5dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/resultmdc"
+            style="@android:style/TextAppearance.Material.Headline"
+            />
+    </LinearLayout>
+
+</LinearLayout>

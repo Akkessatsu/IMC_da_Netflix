@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".IMC">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"
+        android:background="@color/red"
+        android:textColor="@color/black"
+        android:gravity="center"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:textStyle="bold"
+        android:padding="30dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Height"
+            style="@style/TextAppearance.AppCompat.Body1" >
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightPicker"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="cm"
+            style="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Weight"
+            style="@style/TextAppearance.AppCompat.Body1" >
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightPicker"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="kg"
+            style="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/result"
+            style="@android:style/TextAppearance.Material.Headline"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/healthy"
+            style="@android:style/TextAppearance.Material.Headline"
+            />
+    </LinearLayout>
+</LinearLayout>
+
